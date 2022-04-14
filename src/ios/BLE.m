@@ -567,7 +567,7 @@ static bool done = false;
             } else if ([service.UUID isEqual:hc02ServiceUUID]) {
                 NSLog(@"HC-02 Bluetooth");
                 NSLog(@"Set HC-02 read write UUID");
-                serialServiceUUID = ;
+                serialServiceUUID = hc02ServiceUUID;
                 readCharacteristicUUID = [CBUUID UUIDWithString:@HC02_CHAR_TX_UUID];
                 writeCharacteristicUUID = [CBUUID UUIDWithString:@HC02_CHAR_RX_UUID];
                 break;
